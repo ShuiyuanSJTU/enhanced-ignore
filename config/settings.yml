@@ -1,0 +1,4 @@
+plugins:
+  enhanced_ignore_enabled:
+    default: true
+    client: true

@@ -1,0 +1,11 @@
+{{#if siteSettings.enhanced_ignore_enabled}}
+<div class="control-group enhanced-ignore">
+    <label class="control-label">{{i18n "enhanced_ignore.enhanced_ignore"}}</label>
+
+    <div class="controls">
+      {{preference-checkbox
+          labelKey="enhanced_ignore.enable_enhanced_ignore"
+          checked=model.custom_fields.enhanced_ignore}}
+    </div>
+  </div>
+{{/if}}

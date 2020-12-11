@@ -2,5 +2,5 @@ en:
   js:
     enhanced_ignore: 
       enhanced_ignore: "Enhanced Ignore"
-      hide_ignored_topics: "Hide topics from ignored users"
-      hide_my_topics_to_ignored: "Hide my topics to ignored users"
+      hide_ignored_topics: "Remove topics by ignored users from my topic list"
+      hide_my_topics_to_ignored: "Remove my topics from ignored users' topic list"

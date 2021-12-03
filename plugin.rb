@@ -24,7 +24,7 @@ after_initialize do
    TopicQuery.add_custom_filter(:ignore_users) do |results, topic_query|
      if SiteSetting.enhanced_ignore_enabled?
        user = topic_query.user
-        if user and user.custom_fields['hide_ignored_topics']
+        if user && user.custom_fields['hide_ignored_topics']
           ignored_user_ids = IgnoredUser.where(user: user).select(:ignored_user_id)
            results = results.where.not(user_id: ignored_user_ids)
         end

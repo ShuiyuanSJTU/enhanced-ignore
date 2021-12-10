@@ -2,4 +2,5 @@ zh_CN:
   js:
     enhanced_ignore: 
       enhanced_ignore: "增强屏蔽"
-      hide_ignored_topics: "不在我的主题列表中显示被忽视用户发表的主题"
+      hide_ignored_topics: "不在我的主题列表中显示被屏蔽用户发表的主题"
+      ignored_user_cannot_reply_to_me: "被屏蔽用户不能回复我的主题"

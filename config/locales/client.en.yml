@@ -3,3 +3,4 @@ en:
     enhanced_ignore: 
       enhanced_ignore: "Enhanced Ignore"
       hide_ignored_topics: "Remove topics by ignored users from my topic list"
+      ignored_user_cannot_reply_to_me: "Ignored users cannot reply to my topics"

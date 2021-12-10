@@ -1,11 +1,15 @@
 {{#if siteSettings.enhanced_ignore_enabled}}
 <div class="control-group enhanced-ignore">
-    <label class="control-label">{{i18n "enhanced_ignore.enhanced_ignore"}}</label>
+  <label class="control-label">{{i18n "enhanced_ignore.enhanced_ignore"}}</label>
 
-    <div class="controls">
-      {{preference-checkbox
-          labelKey="enhanced_ignore.hide_ignored_topics"
-          checked=model.custom_fields.hide_ignored_topics}}
-    </div>
+  <div class="controls">
+    {{preference-checkbox
+      labelKey="enhanced_ignore.hide_ignored_topics"
+      checked=model.custom_fields.hide_ignored_topics}}
+    {{preference-checkbox
+      labelKey="enhanced_ignore.ignored_user_cannot_reply_to_me"
+      checked=model.custom_fields.ignored_user_cannot_reply_to_me}}
   </div>
+
+</div>
 {{/if}}

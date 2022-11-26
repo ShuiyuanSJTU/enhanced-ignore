@@ -6,8 +6,6 @@
 # authors: Jiajun Du
 # url: https://github.com/ShuiyuanSJTU/enhanced-ignore
 
-register_asset 'javascripts/discourse/templates/connectors/user-preferences-notifications/enhanced-ignore-preferences.hbs'
-
 enabled_site_setting :enhanced_ignore_enabled
 
 PLUGIN_NAME ||= 'EnhancedIgnore'

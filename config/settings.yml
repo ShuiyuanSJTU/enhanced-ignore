@@ -2,3 +2,7 @@ plugins:
   enhanced_ignore_enabled:
     default: true
     client: true
+  disable_topic_cannot_reply_threshold:
+    type: integer
+    default: 200
+

@@ -2,7 +2,7 @@
 
 # name: enhanced-ignore
 # about: enhanced plugin
-# version: 0.2
+# version: 0.3
 # authors: Jiajun Du
 # url: https://github.com/ShuiyuanSJTU/enhanced-ignore
 
@@ -37,7 +37,7 @@ after_initialize do
    module OverrideTopicGuardian
      def can_create_post_on_topic?(topic)
        return false if !super
-       if SiteSetting.enhanced_ignore_enabled? && topic.user && topic.user.custom_fields['ignored_user_cannot_reply_to_me']
+       if SiteSetting.enhanced_ignore_enabled? && (topic.user && topic.user.custom_fields['ignored_user_cannot_reply_to_me'] && topic.posts_count < SiteSetting.disable_topic_cannot_reply_threshold)
          ignored_user_ids = IgnoredUser.where(user: topic.user).select(:ignored_user_id)
          return !ignored_user_ids.exists?(ignored_user_id: @user)
        end

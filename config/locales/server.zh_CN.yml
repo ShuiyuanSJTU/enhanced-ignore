@@ -1,3 +1,4 @@
 zh_CN:
   site_settings:
     enhanced_ignore_enabled: "启用增强屏蔽插件（重启生效）"
+    disable_topic_cannot_reply_threshold: "对于超过此回帖数量的话题，不再限制被楼主忽略用户的发帖"

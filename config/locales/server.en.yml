@@ -1,3 +1,5 @@
 en:
   site_settings:
     enhanced_ignore_enabled: "Enable enhanced-ignore plugin"
+    disable_topic_cannot_reply_threshold: "For topics that exceed this number of replies, no longer restrict posts from ignored users"
+

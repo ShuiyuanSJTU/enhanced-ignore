@@ -8,7 +8,9 @@
 
 enabled_site_setting :enhanced_ignore_enabled
 
-PLUGIN_NAME ||= 'EnhancedIgnore'
+module ::EnhancedIgnore
+  PLUGIN_NAME = 'EnhancedIgnore'
+end
 
 after_initialize do
 

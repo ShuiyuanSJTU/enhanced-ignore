@@ -1,19 +1,7 @@
-import { action } from "@ember/object";
 import { withPluginApi } from "discourse/lib/plugin-api";
 
-
 function initializeEnhancedIgnore(api) {
-  api.modifyClass(
-    "controller:preferences/notifications",
-    (Superclass) =>
-      class extends Superclass {
-        @action
-        save() {
-          this.get("saveAttrNames").push("custom_fields");
-          super.save();
-        }
-      }
-  );
+  api.addSaveableCustomFields("notifications");
 }
 
 export default {
@@ -21,5 +9,5 @@ export default {
 
   initialize() {
     withPluginApi(initializeEnhancedIgnore);
-  }
+  },
 };
